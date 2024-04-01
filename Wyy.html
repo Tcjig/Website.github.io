@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网亦云音乐</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f1f1f1;
+        }
+
+        /* start:头部导航 */
+        .title1 {
+            display: flex;
+            width: 100%;
+            height: 80px;
+            background-color: #202020;
+            background-image: url(./MusicPicture/Music\ note.png);
+            background-repeat: no-repeat;
+            background-size: 40px;
+            background-position: 150px;
+            position: relative;
+        }
+
+        .t1_1 {
+            color: #f1f1f1;
+            font: normal 400 30px/80px 黑体;
+            text-indent: 200px;
+            display: inline-block;
+        }
+
+        .t1_2 {
+            color: #dcdcdc;
+            font: normal 400 20px/80px 仿宋;
+            margin-left: 25px;
+            word-spacing: 20px;
+        }
+
+        .t1_3 {
+            width: 200px;
+            height: 30px;
+            background-color: #f1f1f1;
+            color: gray;
+            font: normal 400 15px/80px 仿宋;
+            border-radius: 20px;
+            border: 0.1px solid #696969;
+            margin-right: 30px;
+            text-indent: 20px;
+            position: absolute;
+            right: 15%;
+            top: 30%;
+        }
+
+        .t1_4 {
+            width: 100px;
+            height: 30px;
+            border: 0.1px solid #696969;
+            position: absolute;
+            right: 9.5%;
+            top: 30%;
+            border-radius: 20px;
+            color: #f1f1f1;
+            font: normal 400 14px/30px 仿宋;
+            text-indent: 15px;
+        }
+
+        .t1_5 {
+            width: 50px;
+            height: 30px;
+            position: absolute;
+            right: 5%;
+            top: 30%;
+            border-radius: 20px;
+            border: 0.1px solid #696969;
+            color: #f1f1f1;
+            font: normal 400 14px/30px 仿宋;
+            text-indent: 10px;
+        }
+
+        /* end:头部导航 */
+
+
+        .title2 {
+            width: 100%;
+            height: 40px;
+            background-color: #bf0000;
+            color: #f1f1f1;
+            font: normal 400 15px/40px 微软雅黑;
+            text-indent: 400px;
+
+            /* 调节文本间距*/
+            word-spacing: 60px;
+        }
+
+        .title3 {
+            position: relative;
+            width: 100%;
+            height: 2000px;
+            background-image: url(./MusicPicture/girl-1990347.jpg);
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: 180% 100%;
+        }
+
+        /* start:热 新 榜 */
+        .title3_Middle {
+            position: absolute;
+            width: 60%;
+            height: 200px;
+            background-color: rgba(241, 241, 241, 0.8);
+            top: 100px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 0.1px solid #f5f5dc;
+        }
+
+        .title3_Middle_1 {
+            color: black;
+            font: normal 700 25px/40px 微软雅黑;
+            display: inline-block;
+            text-indent: 50px;
+        }
+
+        .title3_Middle_2 {
+            position: absolute;
+            color: #2f4f4f;
+            font: normal 700 15px/40px 微软雅黑;
+            display: inline-block;
+            text-indent: 30px;
+            word-spacing: 20px;
+        }
+
+        .title3_Middle_3 {
+            position: absolute;
+            color: #2f4f4f;
+            font: normal 700 15px/40px 微软雅黑;
+            display: inline-block;
+            text-indent: 500px;
+        }
+
+        /* end:热 新 榜 */
+
+        .title3_Middle_img1 {
+            position: absolute;
+            background-image: url(./MusicPicture/音乐.png);
+            background-repeat: no-repeat;
+            background-position: 25%;
+            background-size: 30px;
+            background-color: rgba(241, 241, 241, 0.5);
+            width: 40px;
+            height: 40px;
+        }
+
+        /* start:底部档案条 */
+        .title3_Last {
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            background-color: rgba(241, 241, 241, 0.5);
+            top: 95%;
+            font: normal 700 15px/30px 仿宋;
+            text-indent: 35%;
+            word-spacing: 20px;
+            color: #2f4f4f;
+        }
+
+        /* end:底部档案条 */
+    </style>
+</head>
+
+<body>
+    <div class="title1">
+        <div class="t1_1">网亦云音乐</div>
+        <div class="t1_2">发现音乐 我的音乐 关注 商城 音乐人 云音乐 下载客户端</div>
+        <input class="t1_3" type="text" placeholder="音乐/视频/电台/用户">
+        <diV class="t1_4">创作者中心</diV>
+        <div class="t1_5">登录</div>
+    </div>
+    <div class="title2">推荐 排行榜 歌单 主播电台 歌手 新碟上架</div>
+    <div class="title3">
+        <div class="title3_Middle">
+            <div class="title3_Middle_img1"></div>
+            <div class="title3_Middle_1">热门推荐</div>
+            <div class="title3_Middle_2">华语 流行 摇滚 民谣 电子</div>
+            <div class="title3_Middle_3">更多</div>
+        </div>
+        <div class="title3_Last">服务条款 隐私政策 儿童隐私政策 版权投诉 投资者关系 广告合作 联系我们</div>
+    </div>
+
+</body>
+
+</html>
