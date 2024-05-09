@@ -35,7 +35,14 @@
             font: normal 400 30px/80px 黑体;
             text-indent: 200px;
             display: inline-block;
+            cursor: pointer;
         }
+
+        .t1_1.clicked {
+            color: red;
+            font-weight: bold;
+            /* 添加其他样式或执行其他操作 */
+    }
 
         .t1_2 {
             color: #dcdcdc;
@@ -178,7 +185,19 @@
 
 <body>
     <div class="title1">
-        <div class="t1_1">网亦云音乐</div>
+        <div class="t1_1">
+            网亦云音乐
+            <script>
+                // 获取具有类名为 t1_1 的元素
+                const element = document.querySelector('.t1_1');
+            
+                // 监听点击事件
+                element.addEventListener('click', function() {
+                  // 切换 clicked 类的存在与否
+                  element.classList.toggle('clicked');
+                });
+              </script>
+        </div>
         <div class="t1_2">发现音乐 我的音乐 关注 商城 音乐人 云音乐 下载客户端</div>
         <input class="t1_3" type="text" placeholder="音乐/视频/电台/用户">
         <diV class="t1_4">创作者中心</diV>
